@@ -2,13 +2,13 @@
 title: Start
 description: Main Page
 published: true
-date: 2026-03-20T00:01:55.740Z
+date: 2026-03-20T00:06:15.062Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-27T01:39:11.701Z
 ---
 
-# + Nextcloud
+# Setup + Nextcloud
 
 A server is a versatile computing device that can be used for applications like file serving, remote storage, application hosting, etc. For us, it will primarily be used for Nextcloud, our own private cloud. These instructions outline the setup of the server.
 
