@@ -2,7 +2,7 @@
 title: Adding SSH Public Keys to Truenas
 description: Describes how to generate and add ssh keys to truenas
 published: true
-date: 2026-06-18T02:55:23.445Z
+date: 2026-06-18T02:55:31.408Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-18T02:47:16.138Z
