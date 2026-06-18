@@ -2,7 +2,7 @@
 title: Start
 description: Main Page
 published: true
-date: 2026-03-20T00:06:15.062Z
+date: 2026-06-18T02:38:34.096Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-27T01:39:11.701Z
@@ -43,7 +43,7 @@ Nextcloud [Link](https://nextcloud.com/)
 	1. Select "Install/Upgrade"
 	2. Select the drive you want to install the OS to (use SPACE bar to select).
 	3. Web UI screen:
-		1. Admin user
+		1. username: `admin_user`
 		2. password: `umbcaiaa`
 5. WAIT.
 6. Remove the USB stick
@@ -83,6 +83,17 @@ At this point, the server will be connected to an ip address. In the network con
 	3. password: `umbcaiaa`
 	
 
+# Adding additional users:
+
+For security reasons, you should disable the `truenas_admin` account as soon as possible. Each user that needs access to the dashboard **must** have their own account with the appropriate permissions set. This reduces the impact of one user exposing their credentials.
+
+To add an account, perform the following steps.
+1. Go to `Credentials > Users > Add`
+2. Add a username and configure access to necessary services
+	- Users that will manage the server should have shell and ssh access
+  - Use public key authentication for SSH. It is easy to set up and much more secure than passwords
+  - 
+
 # Adding a storage pool on TrueNAS:
 1. Click on "Storage" (Left Side)
 2. Click on "Create Pool" 
@@ -92,9 +103,6 @@ At this point, the server will be connected to an ip address. In the network con
 6. Once in "Review" click "Create Pool"
 7. Check "Confirm" and click "Continue"
 
-Coming soon:
-To access users in TrueNAS
-1. Click on "Crdentials" 
 
 # Using containers through YAML Configuration
 
