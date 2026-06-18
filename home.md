@@ -2,7 +2,7 @@
 title: Start
 description: Main Page
 published: true
-date: 2026-06-18T02:38:34.096Z
+date: 2026-06-18T02:56:33.907Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-27T01:39:11.701Z
@@ -92,7 +92,7 @@ To add an account, perform the following steps.
 2. Add a username and configure access to necessary services
 	- Users that will manage the server should have shell and ssh access
   - Use public key authentication for SSH. It is easy to set up and much more secure than passwords
-  - 
+  - Refer to the [Adding SSH Keys]()
 
 # Adding a storage pool on TrueNAS:
 1. Click on "Storage" (Left Side)
