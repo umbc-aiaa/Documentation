@@ -2,7 +2,7 @@
 title: Start
 description: Main Page
 published: true
-date: 2026-06-18T02:56:33.907Z
+date: 2026-06-18T03:13:10.058Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-27T01:39:11.701Z
@@ -92,7 +92,16 @@ To add an account, perform the following steps.
 2. Add a username and configure access to necessary services
 	- Users that will manage the server should have shell and ssh access
   - Use public key authentication for SSH. It is easy to set up and much more secure than passwords
-  - Refer to the [Adding SSH Keys]()
+  - Refer to the [Adding SSH Keys](/truenas/adding-ssh-keys/) page for more info
+3. Set the full name and email accordingly
+4. People managing the server should be added to the `builtin_administrators` group.
+5. You should probably leave the UID field blank
+6. Set the home directory path to `/mnt/main/users` and enable `Create Home Directory`
+7. Set the shell to whatever you prefer (`/usr/bin/bash` or `/usr/bin/zsh` are usually fine)
+8. For administrative users, check the **Allow all sudo commands** box
+
+Now ensure the new user can log in and has all the necessary permissions. Given this, you should disable the initial `truenas_admin` user. To do this, go back to the users page, click on `truenas_admin`, and click **Lock**.
+
 
 # Adding a storage pool on TrueNAS:
 1. Click on "Storage" (Left Side)
@@ -145,5 +154,5 @@ include:
 # Guide to Troubleshooting
 1. **READ THE ERROR MESSAGES**
 	- TrueNAS in my experience has very good logging, as you can often find issues very quickly by reading the error messages/logs. Use the shell and `cat` commands to read logs if you need to.
-2. Go to the original documentation. We try our best to keep this documentation current and relevant to the specific things we need to accomplish. However, this resource may not always be up to date, so go to the source(especially if you're trying to do something new)
+2. Go to the original documentation. We try our best to keep this documentation current and relevant to the specific things we need to accomplish. However, this resource may not always be up to date, so go to the source(especially if you're trying to do something new).
 3. **MAKE BACKUPS**, and then mess around and see what happens.
